@@ -1,0 +1,7 @@
+#+OPTIONS: H:2 num:nil toc:nil \n:nil @:t ::t |:t ^:{} _:{} *:t TeX:t LaTeX:t
+
+* Getting Started
+  - If ==docker-compose== is not installed, please get it from [[https://docs.docker.com/compose/install/][here]]
+  - Clone the repository and go in ==git clone git@github.com:zoro16/dataops.git && cd dataops==
+  - Run ==docker-compose up==
+  - The generate file ==output.txt== will be in the main directory
