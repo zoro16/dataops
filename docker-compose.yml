@@ -1,15 +1,15 @@
 version: "3.9"
 services:
   generator:
-    image: generator
-    build: .
+    image: python3/numpy
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - .:/usr/src/app
     command: python data_generator.py
   parser:
-    build: .
-    depends_on:
-      - generator
+    image: python3/numpy
     volumes:
       - .:/usr/src/app
     command: python data_parser.py
